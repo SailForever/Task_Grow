@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Form GrowMedia</title>
+</head>
+
+<body>
+
+  <div class="section-forms">
+    <form class="forms" name="TwoForms" novalidate>
+      <div class="personal">
+        <h3>Личная информация</h3>
+        <div class="personal-form__name inputs">
+          <label for="name">Имя:</label>
+          <input id="nameY" type="text" name="fName">
+        </div>
+        <div class="personal-form__email inputs">
+          <label for="email">E-mail:</label>
+          <input id="email" type="email" name="email">
+        </div>
+        <div class="personal-form__phone inputs">
+          <label for="phone">Телефон:</label>
+          <input id="phone" type="tel" name="phone">
+        </div>
+      </div>
+      <div class="business">
+        <h3>Информация о бизнесе</h2>
+          <div class="business-form__numbers inputs">
+            <label for="numbers">Ожидаемый оборот:</label>
+            <input id="number" type="number" name="number" step="any" min="0">
+          </div>
+          <div class="business-form__select inputs">
+            <label for="select">Выбор индустрии:</label>
+            <select id="industry" name="industry">
+              <option selected disabled value="0"></option>
+              <option value="1">Индустрия 1</option>
+              <option value="2">Индустрия 2</option>
+              <option value="3">Индустрия 3</option>
+            </select>
+          </div>
+          <div class="business-form__checkbox">
+            <label id="privacy" for="checkbox">Я принимаю правила сервиса</label>
+            <input id="check" type="checkbox" name="checkbox">
+          </div>
+          <div class="button">
+            <div class="success">Спасибо! Ваша заявка принята.</div>
+            <button type="submit">Отправить</button>
+          </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="scripts.js"></script>
+  <script src="jquery_3.7.0.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+}
+
+.section-forms {
+  padding: 30px 30px 0 30px;
+}
+
+.forms {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-gap: 30px;
+}
+
+.personal,
+.business {
+  max-width: 500px;
+  width: 50%;
+}
+
+.personal,
+.business {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 5px;
+}
+
+.inputs input,
+.inputs select {
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+  grid-gap: 20px;
+  margin-top: 60px;
+  height: 40px;
+}
+
+.button button {
+  text-transform: uppercase;
+  background-color: #5361f0;
+  border: 0;
+  color: #fff;
+}
+
+.button button:hover {
+  cursor: pointer;
+}
+
+.success {
+  display: none;
+  align-items: center;
+  background-color: rgba(83, 240, 117, 0.757);
+  animation: 3s show ease;
+}
+
+.hidden {
+  display: flex;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .forms {
+    flex-direction: column;
+  }
+
+  .personal,
+  .business {
+    width: 100%;
+  }
+
+  .button {
+    margin-top: 40px;
+  }
+}
+
+.active {
+  border: 1px solid red;
+}
+
+.active-checkBox {
+  box-sizing: border-box;
+  border-bottom: 1px solid red;
+  ;
+}
