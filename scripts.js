@@ -119,8 +119,8 @@ forms.addEventListener('submit', validateFirstF, false);
 function validateFirstF(eo) {
   let errorsAll = 0;
   errorsAll += fNameBlur(!errorsAll);
-  errorsAll += phoneBlur(!errorsAll);
   errorsAll += emailBlur(!errorsAll);
+  errorsAll += phoneBlur(!errorsAll);
   errorsAll += numbersBlur(!errorsAll);
   errorsAll += industryChange(!errorsAll);
   errorsAll += checkedChange(!errorsAll);
